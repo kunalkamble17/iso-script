@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Update package list
+echo "Updating package list..."
+sudo apt update
+
+# List of packages to install
+packages=(
+    "curl"
+    "git"
+    "vim"
+    "htop"
+    "docker.io"
+    "nginx"
+    "python3"
+    "build-essential"
+    "wget"
+    "unzip"
+)
+
+# Install each package
+for package in "${packages[@]}"; do
+    echo "Installing $package..."
+    sudo apt install -y "$package"
+done
+
+echo "All packages have been installed!"

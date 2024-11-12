@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# cli-script-run successfully
 # Function to install packages
 install_packages() {
     sudo apt update  # Update package list
